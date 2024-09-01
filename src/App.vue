@@ -59,6 +59,7 @@ export default {
     this.$router.afterEach(this.handleRouteQuery)
   },
   mounted () {
+    console.log('App component has been mounted.')
     this.$store.dispatch('initApp')
 
     this.handleUserSessionExpiration()
